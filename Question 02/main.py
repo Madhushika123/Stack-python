@@ -16,4 +16,6 @@ mystack.pop()
 mystack.top()
 mystack.disply()
 
+print(mystack.size())
+
 

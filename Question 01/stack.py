@@ -30,11 +30,15 @@ class Stack:
             return self.stack
 
     # This function to check the empty stack
-    def isemptystack(self):
+    def isEmptyStack(self):
         return len(self.stack) == 0
 
     # This function to check the stack is full
-    def isfullstack(self):
+    def isFullStack(self):
         return len(self.stack) == self.limit
+
+    # This function to check the stack size
+    def size(self):
+        return len(self.stack)
 
 

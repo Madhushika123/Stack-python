@@ -21,3 +21,11 @@ class Stack:
         else:
             return self.stack[len(self.stack) - 1]
 
+    # This function to pop (delete) data to the stack
+    def pop(self):
+        if len(self.stack) == 0:
+            print(" Stack Underflow ")
+        else:
+            self.stack = np.delete(self.stack, -1)
+            return self.stack
+

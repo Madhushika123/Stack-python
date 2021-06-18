@@ -8,17 +8,14 @@ class Node:
 
 class Stack:
     # Constructor Stack
-    def __init__(self,limit):
+    def __init__(self):
         self.head = None
-        self.size = 0
 
-    def getsize(self):
-        return self.size
 
 
     # To check is empty the linked list
     def isempty(self):
-        if self.head.size == None:
+        if self.head == None:
             return True
         else:
             return False
@@ -31,7 +28,6 @@ class Stack:
             newnode = Node(data)
             newnode.next = self.head
             self.head = newnode
-            self.size += 1
 
     # Find the first data in linked list
     def top(self):
@@ -51,7 +47,6 @@ class Stack:
             poppednode = self.head
             self.head = self.head.next
             poppednode.next = None
-            self.size -= 1
             return poppednode.next
 
     # To disply the linked list

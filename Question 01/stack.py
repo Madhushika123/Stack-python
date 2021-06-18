@@ -33,4 +33,8 @@ class Stack:
     def isemptystack(self):
         return len(self.stack) == 0
 
+    # This function to check the stack is full
+    def isfullstack(self):
+        return len(self.stack) == self.limit
+
 

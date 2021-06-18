@@ -25,15 +25,25 @@ class Stack:
             newnode.next = self.head
             self.head = newnode
 
+    # Find the first data in linked list
+    def top(self):
+        if self.isempty():
+            print(" Underflow ")
+        else:
+            currentnode = self.head.data
+            print(self.head.data)
+            return currentnode
+
+
     # pop (delete) to the data in linked list
     def pop(self):
         if self.isempty():
             return None
         else:
-            popped = self.head
+            poppednode = self.head
             self.head = self.head.next
-            popped.next = None
-            return popped.next
+            poppednode.next = None
+            return poppednode.next
 
     # To disply the linked list
     def disply(self):
@@ -42,6 +52,6 @@ class Stack:
             print("Stack Underflow")
         else:
             while(currentnode != None):
-                print(currentnode.data,  end=' ==> ')
+                print(currentnode.data, end= " --> ")
                 currentnode = currentnode.next
             return

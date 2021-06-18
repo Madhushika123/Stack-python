@@ -29,3 +29,8 @@ class Stack:
             self.stack = np.delete(self.stack, -1)
             return self.stack
 
+    # This function to check the empty stack
+    def isemptystack(self):
+        return len(self.stack) == 0
+
+

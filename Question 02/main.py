@@ -13,6 +13,7 @@ mystack.disply()
 print("\n======================================================================")
 
 mystack.pop()
+mystack.pop()
 print(" Top element is   : ",mystack.top())
 mystack.disply()
 

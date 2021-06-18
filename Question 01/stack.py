@@ -13,3 +13,11 @@ class Stack:
             return self.stack
         else:
             print(" Stack Overflow ")
+
+    # To find first element in the Stack
+    def top(self):
+        if len(self.stack) == 0:
+            print("Stack Underflow ")
+        else:
+            return self.stack[len(self.stack) - 1]
+
